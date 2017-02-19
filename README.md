@@ -3,7 +3,10 @@
 
 ## Usage
 
-Run `node index.js` or `npm start` to start the server. The `baas` service will run on port 8000 by default.
+Run `node index.js` or `npm start` to start the server. The `baas` service will
+run on port 8000 by default. You can also use the Docker Image
+[`kevingimbel/baas`](https://hub.docker.com/r/kevingimbel/baas). See the Docker
+description below for more information.
 
 ## Config
 
@@ -55,3 +58,22 @@ All other requests will return the default `baas` description.
   "boolean": "none"
 }
 ```
+
+## Docker 
+
+`baas` is available as Docker image on Docker Hub at
+[kevingimbel/baas](https://hub.docker.com/r/kevingimbel/baas). This is the
+official Docker image for baas. 
+
+### Usage
+
+The Docker image uses the default `config.js` file and exposes port 8000. To
+usea different port, run the image with the `-p` flag like shown below.
+
+```sh
+$ docker run --rm -d -p "1337:8000" kevingimbel/baas
+```
+
+The above command will make `baas` available at port 1337. Open `localhost:1337`
+to see the baas default page.
+
