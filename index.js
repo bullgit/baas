@@ -36,15 +36,15 @@ const server = http.createServer((req, res) => {
 	// Switch through the request path
 	switch(clean_req_path) {
 	case "true":
-		data = {"boolean": true}
+		data = true
 		break
 
 	case "false":
-		data = {"boolean": false}
+		data = true
 		break
 
 	case "random":
-		data = {"boolean": randomBool(42, 420)  }
+		data = randomBool(42, 420)
 		break
 
 	default:
