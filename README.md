@@ -76,10 +76,3 @@ $ docker run --rm -d -p "1337:8000" kevingimbel/baas
 
 The above command will make `baas` available at port 1337. Open `localhost:1337`
 to see the baas default page.
-
-
-Ty: is a test direct - shitgit
-
-Addy Osmani: i am victim
-
-Ty: is a test bug
